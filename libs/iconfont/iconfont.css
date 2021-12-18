@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "iconfont";
+    /* Project id 2963319 */
+    src: url('font_2963319_mh38dqwcl7.woff2') format('woff2'),
+        url('font_2963319_mh38dqwcl7.woff') format('woff'),
+        url('font_2963319_mh38dqwcl7.ttf') format('truetype');
+}
+
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jiantouyou:before {
+    content: "\e62d";
+}
+
+.icon-huiyikaihuitaolun:before {
+    content: "\e651";
+}
+
+.icon-tiyu:before {
+    content: "\e647";
+}
+
+.icon-meishi:before {
+    content: "\e8f8";
+}
+
+.icon-xuexiao_xuexiaoxinxi:before {
+    content: "\e661";
+}
+
+.icon-kewaihuodong:before {
+    content: "\e608";
+}
+
+.icon-jiaoshi:before {
+    content: "\e60a";
+}
+
+.icon-QQ:before {
+    content: "\e882";
+}
+
+.icon-xinlangweibo:before {
+    content: "\e600";
+}
+
+.icon-weixin:before {
+    content: "\e601";
+}
+
+.icon-xiangxiajiantou:before {
+    content: "\e61f";
+}
+
+.icon-github:before {
+    content: "\e602";
+}
+
+.icon-tick:before {
+    content: "\e607";
+}
