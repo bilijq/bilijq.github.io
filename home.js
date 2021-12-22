@@ -7,7 +7,6 @@ navMenu.click(function () {
     navBar.toggleClass('open');
 })
 
-
 let navLi = $('.nav .nav-right li');
 let navItem = $('.nav-item')
 let navItemTop = [];
@@ -67,7 +66,7 @@ function slowImgLoad(images) {
 }
 
 window.onload = function () {
-    // slowImgLoad(slowImages);
+    slowImgLoad(slowImages);
 }
 
 //  节流函数
@@ -86,7 +85,7 @@ function throttle(callback, delay) {
 
 // 滚动事件
 window.onscroll = throttle(function () {
-    // slowImgLoad(slowImages);
+    slowImgLoad(slowImages);
     if (window.pageYOffset === 0) {
         navBar.show().removeClass('navbackgroud');
     } else if (window.pageYOffset <= 735) {
