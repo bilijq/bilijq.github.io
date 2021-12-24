@@ -118,11 +118,11 @@ html {
         }
 
         .swiper-slide:nth-child(2) {
-            background-image: url(../images/guanyu2.webp);
+            background-image: url(../images/mainbgc2.webp);
         }
 
         .swiper-slide:nth-child(3) {
-            background-image: url(../images/mainbgc2.webp);
+            background-image: url(../images/guanyu2.webp);
         }
     }
 
@@ -434,7 +434,7 @@ html {
 
 .tellMe {
     padding: 100px 0;
-    background-image: url(../images/messagebgc2.webp);
+    background-image: url(../images/messagebgc2.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -690,12 +690,21 @@ html {
 
 
             .tab {
-                display: block;
-                text-align: right;
+                display: flex;
+                justify-content: flex-end;
 
-                i {
-                    cursor: pointer;
+
+                .hamburger {
+                    .bar {
+                        display: block;
+                        width: 25px;
+                        height: 3px;
+                        margin: 5px auto;
+                        transition: all 0.3s ease-in-out;
+                        background-color: #fff;
+                    }
                 }
+
             }
         }
     }
@@ -740,9 +749,24 @@ html {
 
             .tab {
 
-                i {
-                    color: #000;
+                .hamburger.active {
+                    .bar {
+                        background-color: #000;
+                    }
+
+                    .bar:nth-child(2) {
+                        opacity: 0;
+                    }
+
+                    .bar:nth-child(1) {
+                        transform: translateY(8px) rotate(45deg);
+                    }
+
+                    .bar:nth-child(3) {
+                        transform: translateY(-8px) rotate(-45deg);
+                    }
                 }
+
             }
         }
     }
