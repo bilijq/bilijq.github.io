@@ -134,11 +134,11 @@ html {
 }
 
 .main .swiper-wrapper .swiper-slide:nth-child(2) {
-  background-image: url(../images/guanyu2.webp);
+  background-image: url(../images/mainbgc2.webp);
 }
 
 .main .swiper-wrapper .swiper-slide:nth-child(3) {
-  background-image: url(../images/mainbgc2.webp);
+  background-image: url(../images/guanyu2.webp);
 }
 
 .main .mask {
@@ -484,7 +484,7 @@ html {
 
 .tellMe {
   padding: 100px 0;
-  background-image: url(../images/messagebgc2.webp);
+  background-image: url(../images/messagebgc2.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -723,11 +723,21 @@ html {
     display: none;
   }
   .nav .container .tab {
-    display: block;
-    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
   }
-  .nav .container .tab i {
-    cursor: pointer;
+  .nav .container .tab .hamburger .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
   }
   .nav.open {
     background-color: #fff;
@@ -775,8 +785,19 @@ html {
       opacity: 1;
     }
   }
-  .nav.open .container .tab i {
-    color: #000;
+  .nav.open .container .tab .hamburger.active .bar {
+    background-color: #000;
+  }
+  .nav.open .container .tab .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .nav.open .container .tab .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+            transform: translateY(8px) rotate(45deg);
+  }
+  .nav.open .container .tab .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+            transform: translateY(-8px) rotate(-45deg);
   }
   .main .mask {
     position: absolute;
