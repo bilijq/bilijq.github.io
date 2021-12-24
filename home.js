@@ -1,10 +1,11 @@
 // 导航条
-let navMenu = $('.nav .tab i');
+let navMenu = $('.nav .tab .hamburger');
 let navUl = $('.nav .nav-right');
 let navBar = $('.nav');
 let mainButton = $('.main .mask button')
 navMenu.click(function () {
     navBar.toggleClass('open');
+    navMenu.toggleClass('active');
 })
 
 let navLi = $('.nav .nav-right li');
