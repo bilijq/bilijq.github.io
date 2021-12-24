@@ -91,8 +91,10 @@ window.onscroll = throttle(function () {
         navBar.show().removeClass('navbackgroud');
     } else if (window.pageYOffset <= 735) {
         navBar.hide();
+        navMenu.removeClass('block');
     } else {
         navBar.show().addClass('navbackgroud');
+        navMenu.addClass('block');
     }
 }, 150)
 
